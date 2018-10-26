@@ -50,4 +50,61 @@ b, strong {
 
 
 
+
+
+
+
+
+
+
+
+.topheader
+{
+	height: 120px;
+	width: 1175px;
+}
+
+.header
+{
+	width: 1175px;
+}
+
+.headerbody
+{
+	background : url("../img/background1.png");
+	background-size: cover;
+	text-align: center;
+	
+}
+
+.black
+{
+	height: 655px;
+	padding-top: 185px;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.black h1
+{
+	opacity: 1;
+}
+
+ul.hr 
+{
+   margin: 0; /* Обнуляем значение отступов */
+   padding: 1px; /* Значение полей */
+}
+
+ul.hr li
+{
+   display: inline; /* Отображать как строчный элемент */
+   margin-left: 100px;
+   margin-right: 0px; /* Отступ слева */
+   padding: 0px; /* Поля вокруг текста */
+}
+
+
+
+
 @import "media"; // Always at the end
