@@ -47,50 +47,32 @@ body {
 b, strong {
 	font-weight: bold;
 }
+.header{
+	width: 1400px;
+	margin: auto;
+}
+/*Header top*/
+.topheader{
+	background-color: white;
+}
+.headermenu{
+    margin-top: 0px;
+    margin: auto;
+}
+.headermenu li{
+	display: inline;
+}
+.search{
+	margin-left: 0px;
 
+}
+.logo{
 
-
-
-
-
-
-
-
-
-
-.topheader
-{
-	height: 120px;
-	width: 1175px;
 }
 
-.header
-{
-	width: 1175px;
-}
 
-.headerbody
-{
-	background : url("../img/background1.png");
-	background-size: cover;
-	text-align: center;
-	
-}
 
-.black
-{
-	height: 655px;
-	padding-top: 185px;
-	background-color: black;
-	opacity: 0.4;
-}
-
-.black h1
-{
-	opacity: 1;
-}
-
-ul.hr 
+ul.hr
 {
    margin: 0; /* Обнуляем значение отступов */
    padding: 1px; /* Значение полей */
@@ -104,7 +86,28 @@ ul.hr li
    padding: 0px; /* Поля вокруг текста */
 }
 
+/*Header body*/
+/*background header body*/
+.headerbody{
+	background-image: url(../img/bg1.png);
+	background-size: cover;
+	height: 655px;
+}
+
+.dark{
+	background-color: black;
+	opacity: 0.6;
+	height: 655px;
+}
+h1{
+	margin: auto;
+}
+.headerbodybutton{
+
+
+}
+/*Header body's elements*/
 
 
 
-@import "media"; // Always at the end
+@import "media";
