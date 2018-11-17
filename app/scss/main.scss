@@ -5,7 +5,11 @@
 ::placeholder {
 	color: #666;
 }
-
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
 ::selection {
 	background-color: $accent;
 	color: #fff;
@@ -39,80 +43,69 @@ body {
 		width: 100%;
 	}
 }
-
 .text-center {
 	text-align: center;
 }
-
 b, strong {
 	font-weight: bold;
 }
 .header{
-
+	width: 1400px;
 	margin: auto;
 }
-/*Header top*/
 .topheader{
+	position: relative;
+	padding-bottom: 50px;
+	padding-top: 50px;
 	display:inline-block;
 	width: 1400px;
 	background-color: white;
 }
-
-.headermenu{
-
-	text-decoration: none;
-    margin-top: 0px;
-    margin: auto;
+li {
+	display: inline-block;
+	padding-left: 45px;
+	list-style: none;
 }
-.headermenu li{
-	display: inline;
+ul{
+	float: right;
 }
-.search{
-	margin-left: 0px;
-
+.Logo{
+	position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+	margin-left: 115px;
 }
-
-
-ul.hr
-{
-   margin: 0; /* Обнуляем значение отступов */
-   padding: 10px; /* Значение полей */
+.Search{
+	display: inline-block;
+	float: right;
+	padding-left: 30px;
 }
-
-ul.hr li
-{
-	display: inline; /* Отображать как строчный элемент */
-	margin-left: 100px;
-	margin-right: 0px; /* Отступ слева */
-	padding: 0px; /* Поля вокруг текста */
-}
-
-/*Header body*/
-/*background header body*/
 .headerbody{
 	background-image: url(../img/bg1.png);
 	background-size: cover;
 	height: 655px;
+	box-shadow:0 0 0 400px rgba(0, 0, 0, 0.55) inset;
+	width: 100%;
 }
-
 .dark{
-	background-color: black;
-	opacity: 0.6;
-	height: 655px;
+	padding-top: 15%;
 	text-align: center;
-
+}
+.dark p,h1{
+	color: white;
+}
+.dark a{
+	display: inline-block;
+	margin-top: 110px;
 }
 h1{
 	margin: auto;
 }
-
-/*Header body's elements*/
-
-
 .aboutus
 {
+	margin-top: 130px;
 	height: 670px;
-	margin: auto;
+
 	text-align: center;
 }
 .aboutus figure
@@ -140,6 +133,12 @@ h1{
 	height: 438px;
 	display: inline-block;
 }
+.servicesbuttons figcaption{
+	margin-top: 20px;
+}
+.servicesbuttons p{
+	margin-top: 30px;
+}
 .letestworks
 {
 	margin: 125px;
@@ -151,7 +150,6 @@ h1{
 }
 .letestworksimg figure
 {
-
 	display: inline-block;
 	margin: 0px 30px 30px 0px;
 }
@@ -224,7 +222,6 @@ h1{
 	margin: 0;
 	padding: 10px;
 }
-
 .contactus
 {
 	text-align: center;
@@ -233,13 +230,56 @@ h1{
 }
 
 
+.ghost-button-rounded-corners1 {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners1:hover,
+.ghost-button-rounded-corners1:active {
+	color: white;
+}
 
+.ghost-button-rounded-corners2 {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: white;
+  border: 2px solid #009966;
+  border-radius: 0px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+	background-color: #009966;
+}
+.ghost-button-rounded-corners2:hover{
+	background-color: #009966;
+}
+.ghost-button-rounded-corners2:active {
 
+}
 
-
-
-
-
-
+.ghost-button-rounded-corners {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+  background-color: #009966;
+  color: #000;
+}
 
 @import "media";
