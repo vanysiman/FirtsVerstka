@@ -9,11 +9,10 @@ ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
 }
-a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
-::selection {
-	background-color: $accent;
-	color: #fff;
+a {
+	text-decoration: none;
 }
+
 
 body {
 	font-size: 16px;
@@ -49,6 +48,7 @@ body {
 b, strong {
 	font-weight: bold;
 }
+
 .header{
 	width: 1400px;
 	margin: auto;
@@ -61,6 +61,7 @@ b, strong {
 	width: 1400px;
 	background-color: white;
 }
+
 li {
 	display: inline-block;
 	padding-left: 45px;
@@ -85,7 +86,7 @@ ul{
 	background-size: cover;
 	height: 655px;
 	box-shadow:0 0 0 400px rgba(0, 0, 0, 0.55) inset;
-	width: 100%;
+	width:100%;
 }
 .dark{
 	padding-top: 15%;
@@ -133,12 +134,32 @@ h1{
 	height: 438px;
 	display: inline-block;
 }
-.servicesbuttons figcaption{
-	margin-top: 20px;
+.service_block{
+	width: 370px;
+	height: 430px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin: 15px 15px 15px 15px;
+	padding: 58px;
 }
-.servicesbuttons p{
-	margin-top: 30px;
+.service_block:hover{
+	background-color: #00897b;
+	color: #fff;
 }
+
+.smartphone{
+	margin:auto;
+	height: 62px;
+	width: 56px;
+	background: url(../img/smartphone.png);
+}
+.service_block:hover .smartphone{
+	margin: auto;
+	height: 62px;
+	width: 56px;
+	background: url(../img/smartphone_w.png);
+}
+
 .letestworks
 {
 	margin: 125px;
@@ -168,13 +189,12 @@ h1{
     text-align:center;
     width:46px;
     height:46px;
-    float:left;
+		display: inline-block;
     background:#fff;
     border:1px solid #ccc;
     box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
     border-radius:46px;
-    margin:0 10px 10px 0;
-    padding:6px;
+    padding:0px;
     color:#000;
 }
 .twitter a:hover{background:#00acee;color:#fff;}
@@ -182,54 +202,481 @@ h1{
 .whatsapp a:hover{background:#50b154;color:#fff;}
 .dropbox a:hover{background:#1087dd;color:#fff;}
 
-.pracingplan
-{
+.pricing_plan{
+	margin-top: 125px;
+	padding-top: 125px;
+	background-color: #f0f1f1;
 	text-align: center;
-	width: 1400px;
-	margin: auto;
+	padding-bottom: 125px;
 }
-.ourteammember
-{
-	height: 670px;
-	margin: auto;
-	text-align: center;
+.zagolovok{
+	margin-bottom: 125px;
 }
-.ourteammember figure
-{
+.pricing_plan li{
+	list-style-type: none;
+}
+.pricing_plan hr{
+	width: 178px;
+	height: 1.2px;
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+	margin-bottom: 35px;
+}
+.header_pricing{
+	width: 370px;
+	height: 209px;
+	background: #3949ab;
+	display:block;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+	color: #ffffff;
+	margin-bottom: 20px;
+	padding: 50px;
+}
+
+.block_left{
+	width: 370px;
+	height: 667px;
+	background-color: #ffffff;
 	display: inline-block;
-	padding: 100px;
-}
-.blog
-{
-	width: 1400px;
-	margin: auto;
-}
-.blog1
-{
-	margin: 0;
-	padding: 10px;
-	float: left;
-}
-.blog2
-{
-	margin-top: 50px;
-	margin: 0;
-	padding: 10px;
-	float: right;
-}
-.blog3
-{
-	margin: 0;
-	padding: 10px;
-}
-.contactus
-{
+	margin-right: 15px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: 300;
 	text-align: center;
-	width: 1400px;
-	margin: auto;
+}
+.block_left:hover{
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+ 	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+	 box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+.block_left span{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+}
+.block_left button{
+	width: 180px;
+	height: 60px;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	margin-top: 15px;
+	outline: none;
+}
+.block_left button:hover{
+	width: 180px;
+	height: 60px;
+	background-color: #00897b;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+.block_center{
+	width: 370px;
+	height: 667px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: 300;
+	text-align: center;
 }
 
+.block_center span{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+}
+.block_center button{
+	width: 180px;
+	height: 60px;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	margin-top: 15px;
+	outline: none;
+}
+.block_center button:hover{
+	width: 180px;
+	height: 60px;
+	background-color: #00897b;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+.block_center:hover{
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+ 	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+	 box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+.block_right{
+	width: 370px;
+	height: 667px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin-left: 15px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: 300;
+	text-align: center;
+}
+.block_right:hover{
+	-webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+ 	-moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.3);
+	 box-shadow: 0px 5px 25px 1px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(0, 0, 0, 0.1);
+}
+.block_right span{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+}
+.block_right button{
+	width: 180px;
+	height: 60px;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+.block_right button:hover{
+	width: 180px;
+	height: 60px;
+	background-color: #00897b;
+	border: none;
+	color: #ffffff;
+}
+.our_team_member{
+	margin: auto;
+	width: 1400px;
+	height: 1095px;
+	background-color: #ffffff;
+	text-align: center;
+}
+.our_team_member li{
+	list-style-type: none;
+}
+.members{
 
+}
+.members h1{
+	margin: 40px 0 0 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #212121;
+}
+.members p{
+	margin: 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+}
+.members img{
+	border-radius: 10px;
+}
+.icon{
+	margin: 30px 15px;
+}
+.members figure{
+	display: inline-block;
+	margin-right: 32px;
+}
+/*начало слайдера*/
+
+
+.wrapper {
+    margin: auto;
+	height: 610px;
+	position: relative;
+	width: 1400px;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	transform: scale(1.5);
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+    height: 15px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 15px;
+	border-radius: 50%;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+	background: #3949ab;
+}
+
+.wrapper label:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid #00897b;
+}
+
+/*Конец слайдера*/
+
+/*Начало blog*/
+.blog{
+	margin: auto;
+	padding-top:110px;
+	width: 1400px;
+	height: 1869px;
+	background-color: #e3fdf9;
+}
+.blog_button{
+	margin: auto;
+	margin-top: 120px;
+	width: 220px;
+}
+.blog_button button{
+	width: 220px;
+	height: 70px;
+	border: 2px solid #00897b;
+	background: none;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	font-weight: 600;
+	text-align: center;
+	outline: none;
+}
+.blog_button button:hover{
+	Color: #fff;
+	width: 220px;
+	height: 70px;
+	border: 2px solid #00897b;
+	background: #00897b;
+}
+.blog1{
+	margin: auto;
+	width: 1150px;
+}
+.blog-img1{
+	display: inline-block;
+}
+.blog1-text{
+	display: inline-block;
+	margin-left: 30px;
+}
+.blog1-text a{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+}
+.blog1-text a:hover{
+	color: #00897b;
+}
+.blog1-text p{
+	padding-top: 20px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+}
+.blog1-text span{
+	margin-left: 15px;
+	margin-right: 40px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	font-weight: 600;
+}
+
+.blog2{
+	margin: auto;
+	width: 1150px;
+}
+.blog-img2{
+	display: inline-block;
+	margin-left: 129px;
+}
+.blog2-text{
+	display: inline-block;
+}
+.blog2-text a{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+}
+.blog2-text a:hover{
+	color: #00897b;
+}
+.blog2-text p{
+	padding-top: 20px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+}
+.blog2-text span{
+	margin-left: 15px;
+	margin-right: 40px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	font-weight: 600;
+}
+
+/*Начало contact*/
+.contact_us{
+	background: url(../img/layer0.jpg) no-repeat;
+	background-size: cover;
+	margin: auto;
+	width: 1400px;
+	height: 1254px;
+	background-color: #212121;
+	text-align: center;
+	color: #ffffff;
+}
+.opacity2{
+	height: 1254px;
+	background: rgba(34, 32, 32, 0.877);
+	position: cover;
+}
+.contact_us li{
+	list-style-type: none;
+	color: #ffffff;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 135px 0px 100px;
+}
+.contact_us figcaption{
+	padding-top: 35px;
+}
+
+.contact_us_text_1{
+	margin-top: 50px;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 500px;
+	height: 84px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 20px;
+}
+.contact_us_text_2{
+	margin-top: 30px;
+	width: 1031px;
+	height: 323px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	resize: none;
+	padding: 20px;
+}
+.contact_us button{
+	width: 220px;
+	height: 70px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	margin-top: 20px;
+	margin-right: -810px;
+	outline: none;
+	/*Параметры текста*/
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-weight: bold;
+	text-align: center;
+}
+
+.footer{
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 22px;
+	color: #212121;
+	font-family: "Roboto";
+	font-weight: bold;
+	text-align: center;
+	height: 60px;
+	margin: auto;
+	padding: 1em;
+}
+
+.ghost-button-rounded-corners3 {
+	margin-top: 35px;
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners3:hover,
+.ghost-button-rounded-corners3:active {
+	text-decoration: none;
+	border: 1px solid white;
+	color: white;
+}
 .ghost-button-rounded-corners1 {
   display: inline-block;
   width: 150px;
@@ -244,6 +691,7 @@ h1{
 .ghost-button-rounded-corners1:hover,
 .ghost-button-rounded-corners1:active {
 	color: white;
+	text-decoration: none;
 }
 
 .ghost-button-rounded-corners2 {
@@ -251,18 +699,18 @@ h1{
   width: 150px;
   padding: 8px;
   color: white;
-  border: 2px solid #009966;
+  border: 2px solid #00897b;
   border-radius: 0px;
   text-align: center;
   outline: none;
   text-decoration: none;
-	background-color: #009966;
+	background-color: #00897b;
 }
-.ghost-button-rounded-corners2:hover{
-	background-color: #009966;
-}
+.ghost-button-rounded-corners2:hover,
 .ghost-button-rounded-corners2:active {
-
+	text-decoration: none;
+	background-color: #00897b;
+	color: white;
 }
 
 .ghost-button-rounded-corners {
@@ -270,7 +718,7 @@ h1{
   width: 150px;
   padding: 8px;
   color: black;
-  border: 1px solid black;
+  border: 1px solid #00897b;
   border-radius: 0px;
   text-align: center;
   outline: none;
@@ -278,8 +726,14 @@ h1{
 }
 .ghost-button-rounded-corners:hover,
 .ghost-button-rounded-corners:active {
-  background-color: #009966;
-  color: #000;
+	text-decoration: none;
+  background-color: #00897b;
+  color: white;
 }
-
+.blog h2,p{
+	text-align: center;
+}
+.blog p{
+	margin-bottom: 100px;
+}
 @import "media";
